@@ -9,7 +9,6 @@
 
     <meta property="og:title" content="A Receita do Alívio Matinal - Recupere a sua liberdade">
     <meta property="og:description" content="O protocolo natural para desinflamar joelhos e costas em casa.">
-    <meta property="og:image" content="link_do_teu_banner_ou_capa.jpg">
     <meta property="og:url" content="https://vidasemdor.onrender.com">
     <meta property="og:type" content="website">
 
@@ -29,6 +28,7 @@
       <img height="1" width="1" style="display:none" 
            src="https://www.facebook.com/tr?id=2076847739552009&ev=PageView&noscript=1"/>
     </noscript>
+
     <style>
         /* RESET E ESTILOS BÁSICOS */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -53,9 +53,9 @@
         .repelente { background-color: #f8f9fa; color: #555; border: 1px solid #e2e8f0; border-left: 4px solid #94a3b8; padding: 12px; font-size: 13px; border-radius: 4px; margin-bottom: 20px; text-align: left; line-height: 1.4; }
         .repelente strong { color: #333; }
 
-        /* ÁREA DO VÍDEO */
+        /* ÁREA DO VÍDEO (ADAPTADO PARA YOUTUBE) */
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0px 8px 20px rgba(0,0,0,0.4); border: 3px solid #111; background: #000; margin-bottom: 10px; }
-        .video-container iframe, .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
         /* GATILHO DE PREÇO (ANCORAGEM PREMIUM) */
         .price-anchor { background: #fafafa; border: 2px dashed #b71c1c; border-radius: 10px; padding: 20px; margin: 25px 0; text-align: left; }
@@ -101,7 +101,7 @@
 
         /* RODAPÉ FACEBOOK COMPLIANCE (ESCUDO ANTI-BLOQUEIO) */
         .footer-legal { background: #1e293b; color: #94a3b8; padding: 30px 20px; font-size: 12px; line-height: 1.5; margin-top: 40px; }
-        .footer-legal a { color: #cbd5e1; text-decoration: none; margin: 0 10px; }
+        .footer-legal a { color: #cbd5e1; text-decoration: none; margin: 0 10px; cursor: pointer; }
         .footer-legal a:hover { text-decoration: underline; }
         .footer-legal p { margin-top: 15px; font-size: 11px; }
 
@@ -111,6 +111,13 @@
         .toast-icon { font-size: 24px; }
         .toast-text { font-size: 13px; text-align: left; color: #333; }
         .toast-text strong { display: block; font-size: 14px; color: #111; }
+
+        /* ESTILOS PARA OS MODAIS (POP-UPS LEGAIS) */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; justify-content: center; align-items: center; padding: 20px; }
+        .modal-content { background: #fff; padding: 30px 20px; border-radius: 10px; max-width: 500px; width: 100%; max-height: 80vh; overflow-y: auto; text-align: left; position: relative; color: #333; }
+        .modal-content h2 { color: #b71c1c; font-size: 20px; margin-bottom: 15px; text-transform: uppercase; }
+        .modal-content p { font-size: 13px; line-height: 1.6; margin-bottom: 12px; color: #555; }
+        .close-btn { position: absolute; top: 10px; right: 15px; font-size: 28px; font-weight: bold; color: #333; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -130,10 +137,7 @@
         </div>
 
         <div class="video-container">
-            <video autoplay muted controlsList="nodownload" controls>
-                <source src="seu_video_aqui.mp4" type="video/mp4">
-                O seu navegador não suporta o vídeo.
-            </video>
+            <iframe src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO?autoplay=1&modestbranding=1&controls=0&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div class="price-anchor">
@@ -206,12 +210,34 @@
 
     <div class="footer-legal">
         <div>
-            <a href="#">Termos de Uso</a> | 
-            <a href="#">Políticas de Privacidade</a>
+            <a onclick="abrirModal('modal-termos')">Termos de Uso</a> | 
+            <a onclick="abrirModal('modal-privacidade')">Políticas de Privacidade</a>
         </div>
         <p>Este site não faz parte do site do Facebook ou da Meta Platforms, Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma maneira. FACEBOOK é uma marca comercial da Meta Platforms, Inc.</p>
         <p>Aviso de Saúde: As informações disponibilizadas neste site não substituem o acompanhamento de médicos e especialistas. Os resultados podem variar de pessoa para pessoa.</p>
         <p>&copy; 2026 Vida Sem Dor MZ. Todos os direitos reservados.</p>
+    </div>
+
+    <div id="modal-termos" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal('modal-termos')">&times;</span>
+            <h2>Termos de Uso</h2>
+            <p><strong>1. Natureza do Serviço:</strong> O site "Vida Sem Dor MZ" oferece produtos de informação digital (E-books e Guias) voltados para práticas de bem-estar natural e educação em saúde.</p>
+            <p><strong>2. Isenção de Responsabilidade Médica:</strong> O conteúdo fornecido não substitui o aconselhamento, diagnóstico ou tratamento médico profissional. Consulte sempre um médico antes de iniciar qualquer protocolo ou dieta.</p>
+            <p><strong>3. Pagamentos e Entrega:</strong> Os pagamentos são processados via Kambafy. Tratando-se de um produto 100% digital, o acesso é enviado imediatamente após a confirmação do pagamento via e-mail e WhatsApp do utilizador. Não há envio de produtos físicos.</p>
+            <p><strong>4. Reembolsos:</strong> De acordo com as políticas para produtos digitais consumíveis, reservamo-nos o direito de avaliar pedidos de reembolso apenas em casos de falha comprovada na entrega do ficheiro digital no prazo estipulado por lei.</p>
+        </div>
+    </div>
+
+    <div id="modal-privacidade" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal('modal-privacidade')">&times;</span>
+            <h2>Políticas de Privacidade</h2>
+            <p><strong>1. Recolha de Dados:</strong> O "Vida Sem Dor MZ" recolhe apenas os dados necessários para o processamento da encomenda e suporte ao cliente (Nome, E-mail e Contacto Telefónico) introduzidos no momento da compra pela gateway Kambafy.</p>
+            <p><strong>2. Uso de Píxeis de Rastreamento:</strong> O nosso site utiliza o Píxel do Facebook/Meta para monitorizar ações e melhorar a qualidade dos anúncios apresentados a si. Nenhum dado sensível de pagamento (como senhas do M-Pesa) é recolhido pelo nosso site.</p>
+            <p><strong>3. Partilha de Informações:</strong> As suas informações pessoais jamais serão vendidas, alugadas ou partilhadas com terceiros não envolvidos diretamente no processamento logístico e informático da sua compra.</p>
+            <p><strong>4. Segurança:</strong> A plataforma de pagamento Kambafy é responsável pela criptografia e segurança financeira da sua transação. Apenas retemos dados de acesso ao infoproduto.</p>
+        </div>
     </div>
 
     <div class="toast-notificacao" id="toast">
@@ -223,6 +249,15 @@
     </div>
 
     <script>
+        // FUNÇÕES PARA ABRIR E FECHAR OS MODAIS (ESCUDO ANTI-BLOQUEIO)
+        function abrirModal(id) {
+            document.getElementById(id).style.display = 'flex';
+        }
+        function fecharModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+
+        // FUNÇÃO DE NOTIFICAÇÕES FALSAS
         const nomes = ["João B.", "Teresa M.", "Armando S.", "Helena C.", "Filomena N.", "Paulo Z.", "Carlos M."];
         const cidades = ["Maputo", "Beira", "Nampula", "Matola", "Pemba", "Quelimane", "Chimoio", "Tete"];
         const metodos = ["M-Pesa", "e-Mola"];
