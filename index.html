@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Receita do Alívio Matinal</title>
 
+    <meta name="facebook-domain-verification" content="c3crz79ql3xfktxepv3taz9v3r40pd" />
+
+    <meta property="og:title" content="A Receita do Alívio Matinal - Recupere a sua liberdade">
+    <meta property="og:description" content="O protocolo natural para desinflamar joelhos e costas em casa.">
+    <meta property="og:url" content="https://vidasemdor.vercel.app">
+    <meta property="og:type" content="website">
+
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,12 +21,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(n,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    
-    fbq('init', '2076847739552009'); 
+
+    fbq('init', '2076847739552009');
     fbq('track', 'PageView');
     fbq('track', 'ViewContent');
 
-    // Função para registar o clique no botão de compra
     function dispararCheckOut() {
         fbq('track', 'InitiateCheckout');
     }
@@ -29,46 +35,75 @@
            src="https://www.facebook.com/tr?id=2076847739552009&ev=PageView&noscript=1"/>
     </noscript>
 
-    <meta name="facebook-domain-verification" content="c3crz79ql3xfktxepv3taz9v3r40pd" />
-    <meta property="og:title" content="A Receita do Alívio Matinal - Recupere a sua liberdade">
-    <meta property="og:description" content="O protocolo natural para desinflamar joelhos e costas em casa.">
-    <meta property="og:url" content="https://vidasemdor.vercel.app">
-    <meta property="og:type" content="website">
-
     <style>
+        /* RESET E ESTILOS BÁSICOS */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
         body { background-color: #e2e8f0; color: #111; text-align: center; }
-        .top-bar { position: sticky; top: 0; z-index: 999; background-color: #b71c1c; color: white; padding: 12px 10px; font-size: 14px; font-weight: 900; animation: piscar 2s infinite; text-transform: uppercase; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); }
+        
+        /* BARRA STICKY */
+        .top-bar { position: sticky; top: 0; z-index: 999; background-color: #b71c1c; color: white; padding: 12px 10px; font-size: 14px; font-weight: 900; letter-spacing: 0.5px; animation: piscar 2s infinite; text-transform: uppercase; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); }
         .top-bar span { color: #ffeb3b; font-size: 16px; }
-        @keyframes piscar { 0%, 100% { background-color: #b71c1c; } 50% { background-color: #d32f2f; } }
-        .container { max-width: 500px; margin: 0 auto; background: #ffffff; padding: 30px 20px; box-shadow: 0px 10px 30px rgba(0,0,0,0.15); position: relative; }
+        @keyframes piscar { 0% { background-color: #b71c1c; } 50% { background-color: #d32f2f; } 100% { background-color: #b71c1c; } }
+
+        /* CONTAINER PRINCIPAL */
+        .container { max-width: 500px; margin: 0 auto; background: #ffffff; padding: 30px 20px; box-shadow: 0px 10px 30px rgba(0,0,0,0.15); position: relative; z-index: 1; }
+        
         .headline { font-size: 26px; color: #111; font-weight: 900; line-height: 1.25; margin-top: 5px; }
         .headline span { color: #d90429; text-decoration: underline; }
         .subheadline { font-size: 16px; color: #444; margin: 15px 0 20px 0; font-weight: bold; background: #fff8e1; padding: 12px; border-radius: 8px; border-left: 5px solid #ffc107; text-align: left; }
-        .repelente { background-color: #f8f9fa; color: #555; border-left: 4px solid #94a3b8; padding: 12px; font-size: 13px; border-radius: 4px; margin-bottom: 20px; text-align: left; }
+        
+        .repelente { background-color: #f8f9fa; color: #555; border: 1px solid #e2e8f0; border-left: 4px solid #94a3b8; padding: 12px; font-size: 13px; border-radius: 4px; margin-bottom: 20px; text-align: left; line-height: 1.4; }
+        .repelente strong { color: #333; }
+
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0px 8px 20px rgba(0,0,0,0.4); border: 3px solid #111; background: #000; margin-bottom: 10px; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
         .price-anchor { background: #fafafa; border: 2px dashed #b71c1c; border-radius: 10px; padding: 20px; margin: 25px 0; text-align: left; }
         .price-anchor h3 { color: #111; font-size: 19px; margin-bottom: 15px; text-align: center; font-weight: 900; text-transform: uppercase; }
-        .price-anchor li { display: flex; justify-content: space-between; font-size: 14.5px; margin-bottom: 10px; color: #444; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; list-style: none; }
-        .price-anchor li.total { font-weight: bold; color: #b71c1c; font-size: 17px; border-bottom: none; }
-        .today-price { background: linear-gradient(135deg, #28a745, #218838); color: white; text-align: center; padding: 15px; border-radius: 8px; font-size: 18px; margin-bottom: 10px; }
-        .today-price strong { display: block; font-size: 32px; font-weight: 900; }
-        .btn-comprar { display: flex; justify-content: center; align-items: center; background: linear-gradient(to bottom, #28a745, #1e7e34); color: white; text-decoration: none; padding: 20px 15px; font-size: 20px; font-weight: 900; border-radius: 10px; margin: 10px 0; animation: pulsarBtn 1.5s infinite; text-transform: uppercase; box-shadow: 0px 6px 0px #145523; }
-        @keyframes pulsarBtn { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.03); } }
-        .pagamento-info { font-size: 14px; font-weight: bold; color: #333; margin-top: 10px; }
-        .galeria-prints { margin-top: 35px; background: #f8fafc; padding: 20px 15px; border-radius: 10px; border: 1px solid #e2e8f0; }
-        .galeria-scroll { display: flex; overflow-x: auto; gap: 15px; padding-bottom: 15px; }
-        .galeria-scroll img { flex: 0 0 85%; width: 85%; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
-        .faq-box { text-align: left; background: #0f172a; color: white; padding: 25px 20px; border-radius: 10px; margin-top: 35px; }
-        .faq-box h3 { color: #fde047; text-align: center; margin-bottom: 15px; }
-        .footer-legal { background: #1e293b; color: #94a3b8; padding: 30px 20px; font-size: 12px; margin-top: 40px; }
-        .footer-legal a { color: #cbd5e1; cursor: pointer; text-decoration: underline; margin: 0 5px; }
-        .toast-notificacao { position: fixed; bottom: -100px; left: 10px; background: white; border-left: 5px solid #28a745; padding: 12px 15px; box-shadow: 0px 5px 15px rgba(0,0,0,0.3); border-radius: 5px; transition: bottom 0.5s; z-index: 1000; }
+        .price-anchor ul { list-style: none; padding: 0; margin-bottom: 15px; }
+        .price-anchor li { display: flex; justify-content: space-between; font-size: 14.5px; margin-bottom: 10px; color: #444; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
+        .price-anchor li.total { font-weight: bold; color: #b71c1c; font-size: 17px; border-bottom: none; margin-top: 10px; }
+        
+        .today-price { background: linear-gradient(135deg, #28a745, #218838); color: white; text-align: center; padding: 15px; border-radius: 8px; font-size: 18px; margin-bottom: 10px; box-shadow: 0px 4px 10px rgba(40,167,69,0.3); }
+        .today-price strong { display: block; font-size: 32px; font-weight: 900; line-height: 1.1; }
+        .motivo { font-size: 12px; color: #666; text-align: center; font-style: italic; }
+
+        .btn-comprar { display: flex; justify-content: center; align-items: center; gap: 10px; background: linear-gradient(to bottom, #28a745, #1e7e34); color: white; text-decoration: none; padding: 20px 15px; font-size: 20px; font-weight: 900; border-radius: 10px; margin: 10px 0; box-shadow: 0px 6px 0px #145523, 0px 15px 20px rgba(0,0,0,0.2); transition: all 0.2s; animation: pulsarBtn 1.5s infinite; text-transform: uppercase; border: 1px solid #28a745; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
+        .btn-comprar:active { transform: translateY(6px); box-shadow: 0px 0px 0px #145523; }
+        @keyframes pulsarBtn { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
+        
+        .pagamento-info { font-size: 14px; margin-bottom: 15px; font-weight: bold; color: #333; display: flex; justify-content: center; align-items: center; gap: 5px; }
+        .mpesa { color: #d90429; font-weight: 900; }
+        .emola { color: #ff8c00; font-weight: 900; }
+        .regreto { font-size: 13px; color: #64748b; margin-bottom: 25px; font-style: italic; border-top: 1px dashed #cbd5e1; padding-top: 15px; }
+
+        /* GALERIA COMPLETA */
+        .galeria-prints { margin-top: 35px; background: #f8fafc; padding: 20px 15px; border-radius: 10px; border: 1px solid #e2e8f0; overflow: hidden; }
+        .galeria-prints h3 { color: #166534; margin-bottom: 10px; font-size: 18px; font-weight: 900; text-transform: uppercase; }
+        .swipe-hint { font-size: 13px; color: #b71c1c; font-weight: bold; margin-bottom: 15px; animation: swipeAnim 2s infinite; }
+        @keyframes swipeAnim { 0% { transform: translateX(-3px); } 50% { transform: translateX(3px); } 100% { transform: translateX(-3px); } }
+        
+        .galeria-scroll { display: flex; overflow-x: auto; gap: 15px; padding-bottom: 15px; scroll-snap-type: x mandatory; }
+        .galeria-scroll img { flex: 0 0 85%; width: 85%; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.15); scroll-snap-align: center; border: 1px solid #cbd5e1; object-fit: contain; }
+
+        /* FAQ COMPLETO */
+        .faq-box { text-align: left; background: #0f172a; color: white; padding: 25px 20px; border-radius: 10px; margin-top: 35px; box-shadow: 0px 10px 20px rgba(0,0,0,0.2); }
+        .faq-box h3 { color: #fde047; font-size: 22px; margin-bottom: 20px; text-align: center; text-transform: uppercase; font-weight: 900; }
+        .faq-item { margin-bottom: 20px; border-bottom: 1px solid #334155; padding-bottom: 15px; }
+        .faq-item strong { color: #fde047; display: block; font-size: 16px; margin-bottom: 6px; }
+        .faq-item p { font-size: 14px; color: #cbd5e1; line-height: 1.5; }
+
+        .footer-legal { background: #1e293b; color: #94a3b8; padding: 30px 20px; font-size: 12px; line-height: 1.5; margin-top: 40px; }
+        .footer-legal a { color: #cbd5e1; text-decoration: none; margin: 0 10px; cursor: pointer; }
+        .footer-legal p { margin-top: 15px; font-size: 11px; }
+
+        .toast-notificacao { position: fixed; bottom: -100px; left: 10px; background: white; border-left: 5px solid #28a745; padding: 12px 15px; box-shadow: 0px 5px 15px rgba(0,0,0,0.3); border-radius: 5px; display: flex; align-items: center; gap: 12px; transition: bottom 0.5s ease-in-out; z-index: 1000; max-width: 90%; }
         .toast-notificacao.show { bottom: 20px; }
+
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; justify-content: center; align-items: center; padding: 20px; }
-        .modal-content { background: #fff; padding: 30px 20px; border-radius: 10px; max-width: 500px; position: relative; color: #333; text-align: left; }
-        .close-btn { position: absolute; top: 10px; right: 15px; font-size: 28px; cursor: pointer; }
+        .modal-content { background: #fff; padding: 30px 20px; border-radius: 10px; max-width: 500px; width: 100%; max-height: 80vh; overflow-y: auto; text-align: left; position: relative; color: #333; }
+        .close-btn { position: absolute; top: 10px; right: 15px; font-size: 28px; font-weight: bold; color: #333; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -79,76 +114,112 @@
 
     <div class="container">
         <h1 class="headline">A Receita Caseira Para Acordar Sem <span>Dores Nos Joelhos e Costas</span> (Mesmo Que Tenha Mais de 45 Anos)</h1>
-        <p class="subheadline">🔊 Ligue o som e assista ao vídeo até ao fim para descobrir a mistura de 3 ingredientes exatos.</p>
+        
+        <p class="subheadline">🔊 Ligue o som e assista ao vídeo até ao fim para descobrir a mistura de 3 ingredientes exatos que alivia a inflamação.</p>
 
         <div class="repelente">
-            🛑 <strong>Aviso Importante:</strong> O acesso custa apenas 500 MT. Se procura dicas gratuitas, deixe a vaga para quem quer investir no alívio real.
+            🛑 <strong>Aviso Importante:</strong> O acesso a este protocolo tem um custo único de apenas 500 MT. Se não tem condições ou procura dicas gratuitas, deixe esta vaga para as pessoas prontas para investir no alívio das suas dores.
         </div>
 
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/mMj-b6N-1Jc?autoplay=1&modestbranding=1&controls=0&rel=0" 
-                    loading="lazy" 
-                    frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/mMj-b6N-1Jc?autoplay=1&modestbranding=1&controls=0&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div class="price-anchor">
             <h3>Quanto custa continuar a sofrer?</h3>
             <ul>
                 <li><span>Consultas na Clínica:</span> <span>3.500 MT</span></li>
-                <li><span>Pomadas que não curam:</span> <span>1.500 MT</span></li>
+                <li><span>Pomadas que não curam:</span> <span>1.500 MT (Mês)</span></li>
+                <li><span>Comprimidos p/ inflamação:</span> <span>4.000 MT</span></li>
                 <li class="total"><span>O que a farmácia cobra:</span> <span>9.000 MT</span></li>
             </ul>
-            <div class="today-price">O seu investimento HOJE:<strong>APENAS 500 MT</strong></div>
+            <div class="today-price">
+                O seu investimento HOJE:<br>
+                <strong>APENAS 500 MT</strong>
+            </div>
+            <p class="motivo">A nossa missão é ajudar o nosso povo a curar-se sem depender do sistema caro das farmácias.</p>
         </div>
 
         <a href="https://pay.kambafy.com/checkout/9704499d-d02e-4406-a5d8-4fc80903ffac" onclick="dispararCheckOut()" class="btn-comprar">
             💳 QUERO ALÍVIO AGORA (500 MT)
         </a>
         
-        <div class="pagamento-info">🔒 Pague via <span style="color:#d90429">M-PESA</span> ou <span style="color:#ff8c00">e-MOLA</span></div>
+        <div class="pagamento-info">
+            🔒 Pague em segurança via <span class="mpesa">M-PESA</span> ou <span class="emola">e-MOLA</span>
+        </div>
+
+        <p class="regreto">Amanhã a oferta solidária expira e o preço volta a 1500 MT.</p>
 
         <div class="galeria-prints">
-            <h3>Resultados Reais:</h3>
+            <h3>A prova de que o alívio é real:</h3>
+            <div class="swipe-hint">👈 Deslize para o lado para ler mais 👉</div>
             <div class="galeria-scroll">
-                <img src="depoimento1.jpeg" alt="Depoimento 1">
-                <img src="depoimento2.jpeg" alt="Depoimento 2">
-                <img src="depoimento3.jpeg" alt="Depoimento 3">
+                <img src="depoimento1.jpeg" alt="1"> <img src="depoimento2.jpeg" alt="2">
+                <img src="depoimento3.jpeg" alt="3"> <img src="depoimento4.jpeg" alt="4">
+                <img src="depoimento5.jpeg" alt="5"> <img src="depoimento6.jpeg" alt="6">
+                <img src="depoimento7.jpeg" alt="7"> <img src="depoimento8.jpeg" alt="8">
+                <img src="depoimento9.jpeg" alt="9">
             </div>
         </div>
 
         <div class="faq-box">
             <h3>Dúvidas Frequentes</h3>
-            <p><strong>É seguro?</strong> Sim, via Kambafy.</p>
-            <p><strong>Recebo em casa?</strong> Não, é um guia digital via WhatsApp/Email.</p>
+            <div class="faq-item"><strong>1. Tenho medo que seja burla. É seguro?</strong><p>Sim. Pagamento processado pelo Kambafy.</p></div>
+            <div class="faq-item"><strong>2. Vou receber um frasco?</strong><p>NÃO. Recebe um Guia Digital via WhatsApp/Email.</p></div>
+            <div class="faq-item"><strong>3. Tenho mais de 60 anos, funciona?</strong><p>Sim! Desenvolvido para pessoas acima dos 45 anos.</p></div>
         </div>
         
-        <a href="https://pay.kambafy.com/checkout/9704499d-d02e-4406-a5d8-4fc80903ffac" onclick="dispararCheckOut()" class="btn-comprar" style="margin-top:20px">
+        <a href="https://pay.kambafy.com/checkout/9704499d-d02e-4406-a5d8-4fc80903ffac" onclick="dispararCheckOut()" class="btn-comprar" style="margin-top: 25px;">
             🔒 GARANTIR A MINHA VAGA (500 MT)
         </a>
     </div>
 
     <div class="footer-legal">
-        <a onclick="abrirModal('modal-termos')">Termos</a> | <a onclick="abrirModal('modal-privacidade')">Privacidade</a>
+        <a onclick="abrirModal('modal-termos')">Termos de Uso</a> | <a onclick="abrirModal('modal-privacidade')">Políticas de Privacidade</a>
         <p>&copy; 2026 Vida Sem Dor MZ.</p>
     </div>
 
-    <div id="modal-termos" class="modal-overlay"><div class="modal-content"><span class="close-btn" onclick="fecharModal('modal-termos')">&times;</span><h2>Termos</h2><p>Uso educativo.</p></div></div>
-    <div id="modal-privacidade" class="modal-overlay"><div class="modal-content"><span class="close-btn" onclick="fecharModal('modal-privacidade')">&times;</span><h2>Privacidade</h2><p>Dados protegidos.</p></div></div>
+    <div id="modal-termos" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal('modal-termos')">&times;</span>
+            <h2>Termos de Uso</h2>
+            <p><strong>1. Natureza:</strong> Produtos de informação digital.</p>
+            <p><strong>2. Isenção:</strong> Não substitui aconselhamento médico profissional.</p>
+            <p><strong>3. Entrega:</strong> Acesso enviado imediatamente via e-mail e WhatsApp.</p>
+            <p><strong>4. Reembolsos:</strong> Avaliados em caso de falha na entrega digital.</p>
+        </div>
+    </div>
+
+    <div id="modal-privacidade" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal('modal-privacidade')">&times;</span>
+            <h2>Políticas de Privacidade</h2>
+            <p><strong>1. Dados:</strong> Recolha apenas para suporte e processamento.</p>
+            <p><strong>2. Píxel:</strong> Usamos para melhorar a qualidade dos anúncios.</p>
+            <p><strong>3. Partilha:</strong> Jamais vendemos os seus dados a terceiros.</p>
+        </div>
+    </div>
 
     <div class="toast-notificacao" id="toast">
-        <div class="toast-text"><strong id="toast-name">Cliente</strong>Pagou 500 MT há <span id="toast-time">2</span> min.</div>
+        <div class="toast-icon">✅</div>
+        <div class="toast-text"><strong id="toast-name">Cliente</strong>Pagou há <span id="toast-time">2</span> min.</div>
     </div>
 
     <script>
         function abrirModal(id) { document.getElementById(id).style.display = 'flex'; }
         function fecharModal(id) { document.getElementById(id).style.display = 'none'; }
-        const nomes = ["João B.", "Teresa M.", "Armando S.", "Helena C."];
+
+        const nomes = ["João B.", "Teresa M.", "Armando S.", "Helena C.", "Filomena N.", "Paulo Z.", "Carlos M."];
+        const cidades = ["Maputo", "Beira", "Nampula", "Pemba", "Tete"];
+        const toast = document.getElementById('toast');
+
         function mostrarNotificacao() {
-            document.getElementById('toast-name').innerText = nomes[Math.floor(Math.random() * nomes.length)];
-            document.getElementById('toast').classList.add('show');
-            setTimeout(() => { document.getElementById('toast').classList.remove('show'); }, 4000);
+            document.getElementById('toast-name').innerText = `${nomes[Math.floor(Math.random() * nomes.length)]} (${cidades[Math.floor(Math.random() * cidades.length)]})`;
+            document.getElementById('toast-time').innerText = Math.floor(Math.random() * 12) + 1;
+            toast.classList.add('show');
+            setTimeout(() => { toast.classList.remove('show'); }, 4500);
         }
-        setInterval(mostrarNotificacao, 25000);
+        setTimeout(() => { mostrarNotificacao(); setInterval(mostrarNotificacao, 20000); }, 6000);
     </script>
 </body>
 </html>
