@@ -22,7 +22,7 @@
     s.parentNode.insertBefore(n,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
 
-    fbq('init', '2076847739552009');
+    fbq('init', '2076847739552009'); 
     fbq('track', 'PageView');
     fbq('track', 'ViewContent');
 
@@ -51,6 +51,10 @@
         
         .headline { font-size: 26px; color: #111; font-weight: 900; line-height: 1.25; margin-top: 5px; }
         .headline span { color: #d90429; text-decoration: underline; }
+        
+        /* NOVA FUNÇÃO: PROVA SOCIAL */
+        .trust-badge { font-size: 14px; color: #166534; font-weight: bold; margin: 10px 0; display: block; }
+
         .subheadline { font-size: 16px; color: #444; margin: 15px 0 20px 0; font-weight: bold; background: #fff8e1; padding: 12px; border-radius: 8px; border-left: 5px solid #ffc107; text-align: left; }
         
         .repelente { background-color: #f8f9fa; color: #555; border: 1px solid #e2e8f0; border-left: 4px solid #94a3b8; padding: 12px; font-size: 13px; border-radius: 4px; margin-bottom: 20px; text-align: left; line-height: 1.4; }
@@ -69,13 +73,20 @@
         .today-price strong { display: block; font-size: 32px; font-weight: 900; line-height: 1.1; }
         .motivo { font-size: 12px; color: #666; text-align: center; font-style: italic; }
 
-        .btn-comprar { display: flex; justify-content: center; align-items: center; gap: 10px; background: linear-gradient(to bottom, #28a745, #1e7e34); color: white; text-decoration: none; padding: 20px 15px; font-size: 20px; font-weight: 900; border-radius: 10px; margin: 10px 0; box-shadow: 0px 6px 0px #145523, 0px 15px 20px rgba(0,0,0,0.2); transition: all 0.2s; animation: pulsarBtn 1.5s infinite; text-transform: uppercase; border: 1px solid #28a745; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
+        .btn-comprar { display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(to bottom, #28a745, #1e7e34); color: white; text-decoration: none; padding: 15px; font-size: 18px; font-weight: 900; border-radius: 10px; margin: 10px 0; box-shadow: 0px 6px 0px #145523, 0px 15px 20px rgba(0,0,0,0.2); transition: all 0.2s; animation: pulsarBtn 1.5s infinite; text-transform: uppercase; border: 1px solid #28a745; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
+        .btn-comprar small { font-size: 12px; font-weight: normal; text-transform: none; margin-top: 5px; }
         .btn-comprar:active { transform: translateY(6px); box-shadow: 0px 0px 0px #145523; }
         @keyframes pulsarBtn { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
         
         .pagamento-info { font-size: 14px; margin-bottom: 15px; font-weight: bold; color: #333; display: flex; justify-content: center; align-items: center; gap: 5px; }
         .mpesa { color: #d90429; font-weight: 900; }
         .emola { color: #ff8c00; font-weight: 900; }
+        
+        /* NOVA FUNÇÃO: BOX DE GARANTIA */
+        .garantia-seal { background: #f0fdf4; border: 1px solid #bbf7d0; padding: 15px; border-radius: 10px; margin: 20px 0; display: flex; align-items: center; gap: 10px; text-align: left; }
+        .garantia-seal img { width: 50px; height: 50px; }
+        .garantia-seal p { font-size: 12px; color: #166534; line-height: 1.4; }
+
         .regreto { font-size: 13px; color: #64748b; margin-bottom: 25px; font-style: italic; border-top: 1px dashed #cbd5e1; padding-top: 15px; }
 
         /* GALERIA COMPLETA */
@@ -115,6 +126,8 @@
     <div class="container">
         <h1 class="headline">A Receita Caseira Para Acordar Sem <span>Dores Nos Joelhos e Costas</span> (Mesmo Que Tenha Mais de 45 Anos)</h1>
         
+        <span class="trust-badge">⭐ Mais de 450 moçambicanos já recuperaram a mobilidade este mês.</span>
+
         <p class="subheadline">🔊 Ligue o som e assista ao vídeo até ao fim para descobrir a mistura de 3 ingredientes exatos que alivia a inflamação.</p>
 
         <div class="repelente">
@@ -141,11 +154,17 @@
         </div>
 
         <a href="https://pay.kambafy.com/checkout/9704499d-d02e-4406-a5d8-4fc80903ffac" onclick="dispararCheckOut()" class="btn-comprar">
-            💳 QUERO ALÍVIO AGORA (500 MT)
+            ADQUIRIR VIA M-PESA / E-MOLA (500 MT)
+            <small>Acesso enviado imediatamente após a confirmação</small>
         </a>
         
         <div class="pagamento-info">
             🔒 Pague em segurança via <span class="mpesa">M-PESA</span> ou <span class="emola">e-MOLA</span>
+        </div>
+
+        <div class="garantia-seal">
+            <img src="https://cdn-icons-png.flaticon.com/512/9333/9333991.png" alt="Garantia">
+            <p><strong>GARANTIA DE 7 DIAS:</strong> Se aplicar o protocolo por uma semana e não sentir alívio, devolvemos o seu dinheiro sem perguntas.</p>
         </div>
 
         <p class="regreto">Amanhã a oferta solidária expira e o preço volta a 1500 MT.</p>
@@ -164,7 +183,7 @@
 
         <div class="faq-box">
             <h3>Dúvidas Frequentes</h3>
-            <div class="faq-item"><strong>1. Tenho medo que seja burla. É seguro?</strong><p>Sim. Pagamento processado pelo Kambafy.</p></div>
+            <div class="faq-item"><strong>1. Tenho medo que seja burla. É seguro?</strong><p>Sim. Pagamento processado pelo Kambafy Moz.</p></div>
             <div class="faq-item"><strong>2. Vou receber um frasco?</strong><p>NÃO. Recebe um Guia Digital via WhatsApp/Email.</p></div>
             <div class="faq-item"><strong>3. Tenho mais de 60 anos, funciona?</strong><p>Sim! Desenvolvido para pessoas acima dos 45 anos.</p></div>
         </div>
@@ -183,10 +202,9 @@
         <div class="modal-content">
             <span class="close-btn" onclick="fecharModal('modal-termos')">&times;</span>
             <h2>Termos de Uso</h2>
-            <p><strong>1. Natureza:</strong> Produtos de informação digital.</p>
-            <p><strong>2. Isenção:</strong> Não substitui aconselhamento médico profissional.</p>
-            <p><strong>3. Entrega:</strong> Acesso enviado imediatamente via e-mail e WhatsApp.</p>
-            <p><strong>4. Reembolsos:</strong> Avaliados em caso de falha na entrega digital.</p>
+            <p><strong>1. Natureza:</strong> Produtos de informação digital educativos.</p>
+            <p><strong>2. Isenção:</strong> Não substitui aconselhamento médico especializado.</p>
+            <p><strong>3. Entrega:</strong> Envio imediato após confirmação do sistema.</p>
         </div>
     </div>
 
@@ -194,9 +212,8 @@
         <div class="modal-content">
             <span class="close-btn" onclick="fecharModal('modal-privacidade')">&times;</span>
             <h2>Políticas de Privacidade</h2>
-            <p><strong>1. Dados:</strong> Recolha apenas para suporte e processamento.</p>
-            <p><strong>2. Píxel:</strong> Usamos para melhorar a qualidade dos anúncios.</p>
-            <p><strong>3. Partilha:</strong> Jamais vendemos os seus dados a terceiros.</p>
+            <p><strong>1. Dados:</strong> Usados estritamente para entrega e suporte ao cliente.</p>
+            <p><strong>2. Segurança:</strong> Gateway de pagamento encriptado.</p>
         </div>
     </div>
 
