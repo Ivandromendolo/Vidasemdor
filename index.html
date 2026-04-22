@@ -1,242 +1,1080 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Receita do Alívio Matinal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Método Alívio Natural — Dores no Joelho e Costas</title>
+<meta name="facebook-domain-verification" content="c3crz79ql3xfktxepv3taz9v3r40pd"/>
+<meta property="og:title" content="Método para aliviar dores em casa — sem medicamentos">
+<meta property="og:description" content="Pessoas comuns em Moçambique já estão a sentir diferença. Vê como.">
+<meta property="og:url" content="https://vidasemdor.vercel.app">
+<meta property="og:type" content="website">
 
-    <meta name="facebook-domain-verification" content="c3crz79ql3xfktxepv3taz9v3r40pd" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <meta property="og:title" content="A Receita do Alívio Matinal - Recupere a sua liberdade">
-    <meta property="og:description" content="O protocolo natural para desinflamar joelhos e costas em casa.">
-    <meta property="og:url" content="https://vidasemdor.vercel.app">
-    <meta property="og:type" content="website">
+<style>
+:root{
+  --verde:#1a7a4a;
+  --verde-claro:#e8f5ee;
+  --verde-medio:#2ea86b;
+  --azul-escuro:#0d2137;
+  --creme:#faf8f4;
+  --laranja:#e85d04;
+  --texto:#1a1a2e;
+  --texto-suave:#4a5568;
+  --borda:#e2e8f0;
+  --branco:#ffffff;
+  --sombra:0 4px 24px rgba(0,0,0,0.08);
+  --font-titulo:'Lora',Georgia,serif;
+  --font-corpo:'DM Sans',sans-serif;
+}
 
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 
-    fbq('init', '2076847739552009'); 
-    fbq('track', 'PageView');
-    fbq('track', 'ViewContent');
+body{
+  background:#f0ece4;
+  color:var(--texto);
+  font-family:var(--font-corpo);
+  font-size:16px;
+  line-height:1.6;
+}
 
-    function dispararCheckOut() {
-        fbq('track', 'InitiateCheckout');
-    }
-    </script>
-    <noscript>
-      <img height="1" width="1" style="display:none" 
-           src="https://www.facebook.com/tr?id=2076847739552009&ev=PageView&noscript=1"/>
-    </noscript>
+/* ── BARRA TOPO ── */
+.barra-topo{
+  background:var(--azul-escuro);
+  color:#fff;
+  text-align:center;
+  padding:10px 16px;
+  font-size:13px;
+  font-family:var(--font-corpo);
+  letter-spacing:0.3px;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+.barra-topo strong{color:#fde68a}
 
-    <style>
-        /* RESET E ESTILOS BÁSICOS */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        
-        body { background-color: #e2e8f0; color: #111; text-align: center; }
-        
-        /* BARRA STICKY */
-        .top-bar { position: sticky; top: 0; z-index: 999; background-color: #b71c1c; color: white; padding: 12px 10px; font-size: 14px; font-weight: 900; letter-spacing: 0.5px; animation: piscar 2s infinite; text-transform: uppercase; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); }
-        .top-bar span { color: #ffeb3b; font-size: 16px; }
-        @keyframes piscar { 0% { background-color: #b71c1c; } 50% { background-color: #d32f2f; } 100% { background-color: #b71c1c; } }
+/* ── WRAPPER ── */
+.page{
+  max-width:520px;
+  margin:0 auto;
+  background:var(--branco);
+  box-shadow:0 0 60px rgba(0,0,0,0.12);
+}
 
-        /* CONTAINER PRINCIPAL */
-        .container { max-width: 500px; margin: 0 auto; background: #ffffff; padding: 30px 20px; box-shadow: 0px 10px 30px rgba(0,0,0,0.15); position: relative; z-index: 1; }
-        
-        .headline { font-size: 26px; color: #111; font-weight: 900; line-height: 1.25; margin-top: 5px; }
-        .headline span { color: #d90429; text-decoration: underline; }
-        
-        /* NOVA FUNÇÃO: PROVA SOCIAL */
-        .trust-badge { font-size: 14px; color: #166534; font-weight: bold; margin: 10px 0; display: block; }
+/* ── HERO SECTION ── */
+.hero{
+  background:var(--creme);
+  padding:36px 24px 28px;
+  border-bottom:1px solid var(--borda);
+  text-align:center;
+}
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:var(--verde-claro);
+  color:var(--verde);
+  font-size:12px;
+  font-weight:700;
+  padding:5px 14px;
+  border-radius:99px;
+  margin-bottom:20px;
+  letter-spacing:0.5px;
+  text-transform:uppercase;
+}
+.hero h1{
+  font-family:var(--font-titulo);
+  font-size:28px;
+  font-weight:700;
+  color:var(--azul-escuro);
+  line-height:1.3;
+  margin-bottom:16px;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--verde);
+  border-bottom:2px solid var(--verde-medio);
+}
+.hero .sub{
+  font-size:15px;
+  color:var(--texto-suave);
+  max-width:400px;
+  margin:0 auto 24px;
+  line-height:1.7;
+}
 
-        .subheadline { font-size: 16px; color: #444; margin: 15px 0 20px 0; font-weight: bold; background: #fff8e1; padding: 12px; border-radius: 8px; border-left: 5px solid #ffc107; text-align: left; }
-        
-        .repelente { background-color: #f8f9fa; color: #555; border: 1px solid #e2e8f0; border-left: 4px solid #94a3b8; padding: 12px; font-size: 13px; border-radius: 4px; margin-bottom: 20px; text-align: left; line-height: 1.4; }
-        .repelente strong { color: #333; }
+/* ── IDENTIFICAÇÃO ── */
+.identificacao{
+  background:var(--azul-escuro);
+  color:#fff;
+  border-radius:12px;
+  padding:20px;
+  margin:0 24px 28px;
+  text-align:left;
+}
+.identificacao .id-titulo{
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:#94a3b8;
+  margin-bottom:12px;
+  font-weight:700;
+}
+.identificacao .id-intro{
+  font-size:15px;
+  color:#e2e8f0;
+  margin-bottom:14px;
+}
+.id-lista{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.id-lista li{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:14px;
+  color:#cbd5e1;
+}
+.id-lista li::before{
+  content:'';
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--verde-medio);
+  flex-shrink:0;
+}
+.id-atencao{
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px solid #1e3a5f;
+  font-size:14px;
+  color:#fde68a;
+  font-weight:600;
+}
 
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0px 8px 20px rgba(0,0,0,0.4); border: 3px solid #111; background: #000; margin-bottom: 10px; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* ── SEÇÃO ── */
+.secao{
+  padding:28px 24px;
+  border-bottom:1px solid var(--borda);
+}
+.secao-label{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+  color:var(--verde);
+  font-weight:700;
+  margin-bottom:8px;
+}
+.secao h2{
+  font-family:var(--font-titulo);
+  font-size:21px;
+  color:var(--azul-escuro);
+  margin-bottom:16px;
+  line-height:1.35;
+}
 
-        .price-anchor { background: #fafafa; border: 2px dashed #b71c1c; border-radius: 10px; padding: 20px; margin: 25px 0; text-align: left; }
-        .price-anchor h3 { color: #111; font-size: 19px; margin-bottom: 15px; text-align: center; font-weight: 900; text-transform: uppercase; }
-        .price-anchor ul { list-style: none; padding: 0; margin-bottom: 15px; }
-        .price-anchor li { display: flex; justify-content: space-between; font-size: 14.5px; margin-bottom: 10px; color: #444; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
-        .price-anchor li.total { font-weight: bold; color: #b71c1c; font-size: 17px; border-bottom: none; margin-top: 10px; }
-        
-        .today-price { background: linear-gradient(135deg, #28a745, #218838); color: white; text-align: center; padding: 15px; border-radius: 8px; font-size: 18px; margin-bottom: 10px; box-shadow: 0px 4px 10px rgba(40,167,69,0.3); }
-        .today-price strong { display: block; font-size: 32px; font-weight: 900; line-height: 1.1; }
-        .motivo { font-size: 12px; color: #666; text-align: center; font-style: italic; }
+/* ── VÍDEO ── */
+.video-wrap{
+  position:relative;
+  padding-bottom:56.25%;
+  height:0;
+  overflow:hidden;
+  border-radius:12px;
+  border:3px solid var(--azul-escuro);
+  box-shadow:0 8px 32px rgba(13,33,55,0.25);
+  background:#000;
+  margin-bottom:16px;
+}
+.video-wrap iframe{
+  position:absolute;
+  top:0;left:0;
+  width:100%;height:100%;
+}
+.video-dica{
+  font-size:13px;
+  color:var(--texto-suave);
+  text-align:center;
+  margin-bottom:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+}
+.video-dica span{
+  display:inline-block;
+  width:8px;height:8px;
+  border-radius:50%;
+  background:var(--laranja);
+  animation:pulse 1.5s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(1.3)}}
 
-        .btn-comprar { display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(to bottom, #28a745, #1e7e34); color: white; text-decoration: none; padding: 15px; font-size: 18px; font-weight: 900; border-radius: 10px; margin: 10px 0; box-shadow: 0px 6px 0px #145523, 0px 15px 20px rgba(0,0,0,0.2); transition: all 0.2s; animation: pulsarBtn 1.5s infinite; text-transform: uppercase; border: 1px solid #28a745; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
-        .btn-comprar small { font-size: 12px; font-weight: normal; text-transform: none; margin-top: 5px; }
-        .btn-comprar:active { transform: translateY(6px); box-shadow: 0px 0px 0px #145523; }
-        @keyframes pulsarBtn { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
-        
-        .pagamento-info { font-size: 14px; margin-bottom: 15px; font-weight: bold; color: #333; display: flex; justify-content: center; align-items: center; gap: 5px; }
-        .mpesa { color: #d90429; font-weight: 900; }
-        .emola { color: #ff8c00; font-weight: 900; }
-        
-        /* NOVA FUNÇÃO: BOX DE GARANTIA */
-        .garantia-seal { background: #f0fdf4; border: 1px solid #bbf7d0; padding: 15px; border-radius: 10px; margin: 20px 0; display: flex; align-items: center; gap: 10px; text-align: left; }
-        .garantia-seal img { width: 50px; height: 50px; }
-        .garantia-seal p { font-size: 12px; color: #166534; line-height: 1.4; }
+/* ── BOTÃO CTA ── */
+.btn-cta{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  background:var(--verde);
+  color:#fff;
+  text-decoration:none;
+  padding:18px 20px;
+  border-radius:12px;
+  font-size:18px;
+  font-weight:700;
+  font-family:var(--font-corpo);
+  border:none;
+  cursor:pointer;
+  box-shadow:0 6px 0 #0f5230, 0 12px 24px rgba(26,122,74,0.3);
+  transition:transform 0.15s, box-shadow 0.15s;
+  animation:btnPulse 2s infinite;
+  text-align:center;
+}
+.btn-cta small{
+  font-size:12px;
+  font-weight:400;
+  margin-top:4px;
+  opacity:0.85;
+}
+.btn-cta:active{transform:translateY(6px);box-shadow:0 0 0 #0f5230}
+@keyframes btnPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.015)}}
+.btn-cta.oculto{
+  opacity:0.4;
+  pointer-events:none;
+  filter:grayscale(0.5);
+}
 
-        .regreto { font-size: 13px; color: #64748b; margin-bottom: 25px; font-style: italic; border-top: 1px dashed #cbd5e1; padding-top: 15px; }
+/* Contador gate */
+.gate-aviso{
+  background:var(--azul-escuro);
+  border-radius:10px;
+  padding:12px 16px;
+  margin-bottom:12px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.gate-aviso.oculto{display:none}
+.gate-txt{font-size:13px;color:#94a3b8;line-height:1.4}
+.gate-timer{
+  font-size:22px;
+  font-weight:700;
+  color:#fde68a;
+  font-variant-numeric:tabular-nums;
+  min-width:44px;
+  text-align:right;
+}
 
-        /* GALERIA COMPLETA */
-        .galeria-prints { margin-top: 35px; background: #f8fafc; padding: 20px 15px; border-radius: 10px; border: 1px solid #e2e8f0; overflow: hidden; }
-        .galeria-prints h3 { color: #166534; margin-bottom: 10px; font-size: 18px; font-weight: 900; text-transform: uppercase; }
-        .swipe-hint { font-size: 13px; color: #b71c1c; font-weight: bold; margin-bottom: 15px; animation: swipeAnim 2s infinite; }
-        @keyframes swipeAnim { 0% { transform: translateX(-3px); } 50% { transform: translateX(3px); } 100% { transform: translateX(-3px); } }
-        
-        .galeria-scroll { display: flex; overflow-x: auto; gap: 15px; padding-bottom: 15px; scroll-snap-type: x mandatory; }
-        .galeria-scroll img { flex: 0 0 85%; width: 85%; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.15); scroll-snap-align: center; border: 1px solid #cbd5e1; object-fit: contain; }
+/* ── PROVA RÁPIDA ── */
+.prova-rapida{
+  background:var(--verde-claro);
+  border-radius:12px;
+  padding:20px;
+  margin-top:20px;
+}
+.prova-rapida h3{
+  font-family:var(--font-titulo);
+  font-size:16px;
+  color:var(--azul-escuro);
+  margin-bottom:14px;
+}
+.frases-destaque{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-bottom:16px;
+}
+.frase{
+  background:#fff;
+  border-left:3px solid var(--verde-medio);
+  border-radius:0 8px 8px 0;
+  padding:10px 14px;
+  font-size:14px;
+  color:var(--azul-escuro);
+  font-style:italic;
+}
+.frase strong{display:block;font-style:normal;font-size:12px;color:var(--verde);margin-top:4px}
 
-        /* FAQ COMPLETO */
-        .faq-box { text-align: left; background: #0f172a; color: white; padding: 25px 20px; border-radius: 10px; margin-top: 35px; box-shadow: 0px 10px 20px rgba(0,0,0,0.2); }
-        .faq-box h3 { color: #fde047; font-size: 22px; margin-bottom: 20px; text-align: center; text-transform: uppercase; font-weight: 900; }
-        .faq-item { margin-bottom: 20px; border-bottom: 1px solid #334155; padding-bottom: 15px; }
-        .faq-item strong { color: #fde047; display: block; font-size: 16px; margin-bottom: 6px; }
-        .faq-item p { font-size: 14px; color: #cbd5e1; line-height: 1.5; }
+/* prints scroll */
+.prints-scroll{
+  display:flex;
+  overflow-x:auto;
+  gap:12px;
+  padding-bottom:8px;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+}
+.prints-scroll::-webkit-scrollbar{height:4px}
+.prints-scroll::-webkit-scrollbar-track{background:#e2e8f0;border-radius:99px}
+.prints-scroll::-webkit-scrollbar-thumb{background:var(--verde-medio);border-radius:99px}
+.print-item{
+  flex:0 0 78%;
+  scroll-snap-align:center;
+}
+.print-item img{
+  width:100%;
+  border-radius:10px;
+  border:1px solid var(--borda);
+  object-fit:contain;
+  display:block;
+}
+.print-item .print-tag{
+  font-size:11px;
+  color:var(--texto-suave);
+  text-align:center;
+  margin-top:5px;
+  font-style:italic;
+}
+.scroll-hint{
+  font-size:12px;
+  color:var(--verde);
+  font-weight:700;
+  text-align:center;
+  margin-bottom:10px;
+  animation:hintAnim 2s infinite;
+}
+@keyframes hintAnim{0%,100%{transform:translateX(-3px)}50%{transform:translateX(3px)}}
 
-        .footer-legal { background: #1e293b; color: #94a3b8; padding: 30px 20px; font-size: 12px; line-height: 1.5; margin-top: 40px; }
-        .footer-legal a { color: #cbd5e1; text-decoration: none; margin: 0 10px; cursor: pointer; }
-        .footer-legal p { margin-top: 15px; font-size: 11px; }
+/* ── O QUE RECEBE ── */
+.o-que-recebe{
+  background:var(--creme);
+  border-radius:12px;
+  padding:20px;
+}
+.recebe-lista{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.recebe-lista li{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  font-size:14px;
+  color:var(--texto);
+}
+.recebe-icon{
+  width:36px;height:36px;
+  border-radius:10px;
+  background:var(--verde-claro);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+  flex-shrink:0;
+}
+.recebe-lista strong{display:block;font-size:14px;margin-bottom:2px}
+.recebe-lista span{font-size:13px;color:var(--texto-suave)}
 
-        .toast-notificacao { position: fixed; bottom: -100px; left: 10px; background: white; border-left: 5px solid #28a745; padding: 12px 15px; box-shadow: 0px 5px 15px rgba(0,0,0,0.3); border-radius: 5px; display: flex; align-items: center; gap: 12px; transition: bottom 0.5s ease-in-out; z-index: 1000; max-width: 90%; }
-        .toast-notificacao.show { bottom: 20px; }
+/* ── DEPOIMENTOS VÍDEO ── */
+.dep-video-grid{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  margin-bottom:20px;
+}
+.dep-video-item{
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid var(--borda);
+  background:#000;
+}
+.dep-video-placeholder{
+  aspect-ratio:16/9;
+  background:var(--azul-escuro);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  color:#94a3b8;
+  font-size:13px;
+}
+.play-icon{
+  width:44px;height:44px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.1);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+}
+.dep-video-caption{
+  background:#fff;
+  padding:10px 14px;
+  font-size:13px;
+  color:var(--texto-suave);
+}
+.dep-video-caption strong{display:block;color:var(--azul-escuro);font-size:14px}
 
-        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; justify-content: center; align-items: center; padding: 20px; }
-        .modal-content { background: #fff; padding: 30px 20px; border-radius: 10px; max-width: 500px; width: 100%; max-height: 80vh; overflow-y: auto; text-align: left; position: relative; color: #333; }
-        .close-btn { position: absolute; top: 10px; right: 15px; font-size: 28px; font-weight: bold; color: #333; cursor: pointer; }
-    </style>
+/* prints seção depoimentos */
+.dep-prints-titulo{
+  font-family:var(--font-titulo);
+  font-size:20px;
+  color:var(--azul-escuro);
+  margin-bottom:16px;
+  line-height:1.35;
+}
+
+/* ── PREÇO ── */
+.preco-box{
+  background:var(--azul-escuro);
+  border-radius:16px;
+  padding:28px 24px;
+  text-align:center;
+  color:#fff;
+}
+.preco-box .p-label{
+  font-size:13px;
+  color:#94a3b8;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-bottom:8px;
+}
+.preco-valor{
+  font-family:var(--font-titulo);
+  font-size:52px;
+  font-weight:700;
+  color:#fff;
+  line-height:1;
+  margin-bottom:4px;
+}
+.preco-valor span{font-size:22px;font-weight:400;opacity:0.7}
+.preco-desc{font-size:14px;color:#94a3b8;margin-bottom:20px}
+
+/* ── GARANTIA ── */
+.garantia{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  background:#f0fdf4;
+  border:1.5px solid #86efac;
+  border-radius:12px;
+  padding:16px;
+}
+.garantia-icon{
+  font-size:36px;
+  flex-shrink:0;
+  line-height:1;
+}
+.garantia-texto h4{
+  font-size:15px;
+  font-weight:700;
+  color:var(--verde);
+  margin-bottom:4px;
+}
+.garantia-texto p{
+  font-size:13px;
+  color:#166534;
+  line-height:1.6;
+}
+
+/* ── PAGAMENTO INFO ── */
+.pagamento-info{
+  background:var(--creme);
+  border-radius:12px;
+  padding:18px;
+  margin-top:16px;
+}
+.pag-titulo{
+  font-size:14px;
+  font-weight:700;
+  color:var(--azul-escuro);
+  margin-bottom:12px;
+  text-align:center;
+}
+.pag-passos{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.pag-passos li{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  font-size:13px;
+  color:var(--texto-suave);
+}
+.pag-num{
+  width:22px;height:22px;
+  border-radius:50%;
+  background:var(--azul-escuro);
+  color:#fff;
+  font-size:11px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  margin-top:1px;
+}
+.metodos{
+  display:flex;
+  gap:10px;
+  margin-top:14px;
+}
+.metodo-badge{
+  flex:1;
+  border-radius:10px;
+  padding:10px 8px;
+  text-align:center;
+  font-weight:700;
+  font-size:14px;
+  border:1.5px solid;
+}
+.mpesa-badge{border-color:#d90429;color:#d90429;background:#fff5f5}
+.emola-badge{border-color:#e85d04;color:#e85d04;background:#fff8f5}
+
+/* ── AVISO MÉDICO ── */
+.aviso-med{
+  background:#f8fafc;
+  border:1px solid var(--borda);
+  border-radius:8px;
+  padding:12px 14px;
+  font-size:12px;
+  color:#64748b;
+  line-height:1.6;
+  margin-top:16px;
+  text-align:left;
+}
+
+/* ── FAQ ── */
+.faq-item{
+  border-bottom:1px solid var(--borda);
+  padding:16px 0;
+}
+.faq-item:last-child{border-bottom:none}
+.faq-q{
+  font-size:15px;
+  font-weight:700;
+  color:var(--azul-escuro);
+  margin-bottom:6px;
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+}
+.faq-q::before{content:'P:';color:var(--verde);flex-shrink:0}
+.faq-a{
+  font-size:14px;
+  color:var(--texto-suave);
+  line-height:1.65;
+  padding-left:24px;
+}
+
+/* ── FOOTER ── */
+.footer{
+  background:var(--azul-escuro);
+  color:#64748b;
+  padding:24px 20px;
+  font-size:12px;
+  text-align:center;
+  line-height:1.6;
+}
+.footer button{
+  background:none;border:none;
+  color:#94a3b8;
+  text-decoration:underline;
+  cursor:pointer;
+  font-size:12px;
+  margin:0 6px;
+}
+.footer p{margin-top:12px;font-size:11px}
+
+/* ── TOAST ── */
+.toast{
+  position:fixed;
+  bottom:-120px;
+  left:12px;
+  right:12px;
+  max-width:340px;
+  background:#fff;
+  border-left:4px solid var(--verde);
+  padding:12px 14px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.15);
+  border-radius:0 10px 10px 0;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  transition:bottom 0.4s cubic-bezier(.34,1.56,.64,1);
+  z-index:1000;
+}
+.toast.show{bottom:16px}
+.toast-dot{
+  width:10px;height:10px;
+  border-radius:50%;
+  background:var(--verde);
+  flex-shrink:0;
+  animation:pulse 1.5s infinite;
+}
+.toast-corpo{flex:1}
+.toast-nome{font-size:13px;font-weight:700;color:var(--azul-escuro)}
+.toast-msg{font-size:12px;color:var(--texto-suave)}
+
+/* ── MODAIS ── */
+.modal-overlay{
+  display:none;
+  position:fixed;top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.75);
+  z-index:10000;
+  justify-content:center;
+  align-items:flex-end;
+  padding:0;
+}
+.modal-content{
+  background:#fff;
+  border-radius:20px 20px 0 0;
+  padding:28px 24px 40px;
+  max-width:520px;
+  width:100%;
+  max-height:80vh;
+  overflow-y:auto;
+  position:relative;
+  color:#333;
+  animation:slideUp 0.3s ease;
+}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.modal-content h2{font-family:var(--font-titulo);font-size:20px;margin-bottom:16px;color:var(--azul-escuro)}
+.modal-content p{font-size:14px;color:#555;line-height:1.7;margin-bottom:10px}
+.close-btn{
+  position:absolute;top:16px;right:20px;
+  font-size:24px;font-weight:700;
+  color:#aaa;cursor:pointer;
+  background:none;border:none;
+}
+
+/* Divisor decorativo */
+.divisor{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:24px 0 20px;
+  color:#94a3b8;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.divisor::before,.divisor::after{
+  content:'';flex:1;
+  height:1px;
+  background:var(--borda);
+}
+
+/* Animações de entrada */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.fade-in{animation:fadeUp 0.6s ease forwards}
+
+</style>
 </head>
 <body>
 
-    <div class="top-bar">
-        ⏳ URGENTE: O desconto solidário de 500 MT encerra hoje. <span>Apenas 7 vagas restantes!</span>
+<div class="barra-topo">
+  ⏳ Atenção — método disponível por tempo limitado. <strong>Vê o vídeo até ao fim.</strong>
+</div>
+
+<div class="page">
+
+  <!-- ═══════════════════════════
+       HERO
+  ═══════════════════════════ -->
+  <div class="hero fade-in">
+    <div class="hero-badge">
+      <span>⭐</span> 473 pessoas em Moçambique já sentiram a diferença
+    </div>
+    <h1>Sentes dores no joelho, coluna ou no corpo? Descobre um <em>método simples</em> que podes fazer em casa para aliviar</h1>
+    <p class="sub">Mesmo que já tenhas tentado comprimidos ou pomadas — e a dor sempre volta.</p>
+
+    <!-- IDENTIFICAÇÃO dentro do hero -->
+    <div class="identificacao">
+      <div class="id-titulo">Lê isto com atenção se sentes dor ao:</div>
+      <ul class="id-lista">
+        <li>Levantar da cama de manhã</li>
+        <li>Caminhar por mais de 10 minutos</li>
+        <li>Subir ou descer escadas</li>
+        <li>Ficar muito tempo sentado ou parado</li>
+      </ul>
+      <div class="id-atencao">→ Então o que vais ver a seguir foi feito para ti.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════
+       VSL + GATE SUAVE
+  ═══════════════════════════ -->
+  <div class="secao">
+    <div class="secao-label">Assiste até ao fim</div>
+    <h2>Vê como pessoas comuns estão a aliviar as dores sem medicamentos</h2>
+
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/mMj-b6N-1Jc?autoplay=1&modestbranding=1&controls=1&rel=0"
+        title="Método natural para aliviar dores nos joelhos e costas em Moçambique"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
     </div>
 
-    <div class="container">
-        <h1 class="headline">A Receita Caseira Para Acordar Sem <span>Dores Nos Joelhos e Costas</span> (Mesmo Que Tenha Mais de 45 Anos)</h1>
-        
-        <span class="trust-badge">⭐ Mais de 450 moçambicanos já recuperaram a mobilidade este mês.</span>
-
-        <p class="subheadline">🔊 Ligue o som e assista ao vídeo até ao fim para descobrir a mistura de 3 ingredientes exatos que alivia a inflamação.</p>
-
-        <div class="repelente">
-            🛑 <strong>Aviso Importante:</strong> O acesso a este protocolo tem um custo único de apenas 500 MT. Se não tem condições ou procura dicas gratuitas, deixe esta vaga para as pessoas prontas para investir no alívio das suas dores.
-        </div>
-
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/mMj-b6N-1Jc?autoplay=1&modestbranding=1&controls=0&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <div class="price-anchor">
-            <h3>Quanto custa continuar a sofrer?</h3>
-            <ul>
-                <li><span>Consultas na Clínica:</span> <span>3.500 MT</span></li>
-                <li><span>Pomadas que não curam:</span> <span>1.500 MT (Mês)</span></li>
-                <li><span>Comprimidos p/ inflamação:</span> <span>4.000 MT</span></li>
-                <li class="total"><span>O que a farmácia cobra:</span> <span>9.000 MT</span></li>
-            </ul>
-            <div class="today-price">
-                O seu investimento HOJE:<br>
-                <strong>APENAS 500 MT</strong>
-            </div>
-            <p class="motivo">A nossa missão é ajudar o nosso povo a curar-se sem depender do sistema caro das farmácias.</p>
-        </div>
-
-        <a href="https://pay.kambafy.com/checkout/9704499d-d02e-4406-a5d8-4fc80903ffac" onclick="dispararCheckOut()" class="btn-comprar">
-            ADQUIRIR VIA M-PESA / E-MOLA (500 MT)
-            <small>Acesso enviado imediatamente após a confirmação</small>
-        </a>
-        
-        <div class="pagamento-info">
-            🔒 Pague em segurança via <span class="mpesa">M-PESA</span> ou <span class="emola">e-MOLA</span>
-        </div>
-
-        <div class="garantia-seal">
-            <img src="https://cdn-icons-png.flaticon.com/512/9333/9333991.png" alt="Garantia">
-            <p><strong>GARANTIA DE 7 DIAS:</strong> Se aplicar o protocolo por uma semana e não sentir alívio, devolvemos o seu dinheiro sem perguntas.</p>
-        </div>
-
-        <p class="regreto">Amanhã a oferta solidária expira e o preço volta a 1500 MT.</p>
-
-        <div class="galeria-prints">
-            <h3>A prova de que o alívio é real:</h3>
-            <div class="swipe-hint">👈 Deslize para o lado para ler mais 👉</div>
-            <div class="galeria-scroll">
-                <img src="depoimento1.jpeg" alt="1"> <img src="depoimento2.jpeg" alt="2">
-                <img src="depoimento3.jpeg" alt="3"> <img src="depoimento4.jpeg" alt="4">
-                <img src="depoimento5.jpeg" alt="5"> <img src="depoimento6.jpeg" alt="6">
-                <img src="depoimento7.jpeg" alt="7"> <img src="depoimento8.jpeg" alt="8">
-                <img src="depoimento9.jpeg" alt="9">
-            </div>
-        </div>
-
-        <div class="faq-box">
-            <h3>Dúvidas Frequentes</h3>
-            <div class="faq-item"><strong>1. Tenho medo que seja burla. É seguro?</strong><p>Sim. Pagamento processado pelo Kambafy Moz.</p></div>
-            <div class="faq-item"><strong>2. Vou receber um frasco?</strong><p>NÃO. Recebe um Guia Digital via WhatsApp/Email.</p></div>
-            <div class="faq-item"><strong>3. Tenho mais de 60 anos, funciona?</strong><p>Sim! Desenvolvido para pessoas acima dos 45 anos.</p></div>
-        </div>
-        
-        <a href="https://pay.kambafy.com/checkout/9704499d-d02e-4406-a5d8-4fc80903ffac" onclick="dispararCheckOut()" class="btn-comprar" style="margin-top: 25px;">
-            🔒 GARANTIR A MINHA VAGA (500 MT)
-        </a>
+    <div class="video-dica">
+      <span></span> Ligue o som para melhor experiência
     </div>
 
-    <div class="footer-legal">
-        <a onclick="abrirModal('modal-termos')">Termos de Uso</a> | <a onclick="abrirModal('modal-privacidade')">Políticas de Privacidade</a>
-        <p>&copy; 2026 Vida Sem Dor MZ.</p>
+    <!-- Gate aviso — desaparece aos 60s -->
+    <div class="gate-aviso" id="gate-aviso">
+      <div class="gate-txt">A opção de acesso será<br>desbloqueada em:</div>
+      <div class="gate-timer" id="gate-timer">0:60</div>
     </div>
 
-    <div id="modal-termos" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-btn" onclick="fecharModal('modal-termos')">&times;</span>
-            <h2>Termos de Uso</h2>
-            <p><strong>1. Natureza:</strong> Produtos de informação digital educativos.</p>
-            <p><strong>2. Isenção:</strong> Não substitui aconselhamento médico especializado.</p>
-            <p><strong>3. Entrega:</strong> Envio imediato após confirmação do sistema.</p>
+    <!-- Botão CTA — fica bloqueado até 60s -->
+    <a href="https://pay.kambafy.com/checkout/9704499d-d02e-4406-a5d8-4fc80903ffac"
+       onclick="dispararCheckOut()"
+       class="btn-cta oculto"
+       id="btn-principal">
+      Quero aliviar a minha dor agora
+      <small>Acesso imediato via M-PESA ou e-MOLA</small>
+    </a>
+
+    <!-- Texto pós-VSL -->
+    <div style="margin-top:20px;padding:16px;background:var(--creme);border-radius:10px;text-align:left">
+      <p style="font-size:14px;color:var(--texto-suave);line-height:1.7">
+        Este método foi criado para <strong style="color:var(--azul-escuro)">pessoas comuns</strong> que querem aliviar dores sem depender sempre de medicamentos — usando ingredientes simples que podes encontrar facilmente.
+      </p>
+    </div>
+
+    <!-- PROVA RÁPIDA — prints directos, sem frases fabricadas -->
+    <div class="prova-rapida" style="margin-top:20px">
+      <h3>Reacções de quem já usou o método:</h3>
+      <div class="scroll-hint">👈 Desliza para ver os resultados 👉</div>
+      <div class="prints-scroll">
+        <div class="print-item"><img src="depoimento1.jpeg" alt="Depoimento cliente Maputo — melhoria nas dores"><div class="print-tag">Cliente de Maputo</div></div>
+        <div class="print-item"><img src="depoimento2.jpeg" alt="Resultado após usar o método — Beira"><div class="print-tag">Cliente da Beira</div></div>
+        <div class="print-item"><img src="depoimento3.jpeg" alt="Depoimento de alívio de dores"><div class="print-tag">Cliente de Nampula</div></div>
+        <div class="print-item"><img src="depoimento4.jpeg" alt="Feedback positivo do método"><div class="print-tag">Cliente da Matola</div></div>
+        <div class="print-item"><img src="depoimento5.jpeg" alt="Cliente satisfeito com resultado"><div class="print-tag">Cliente de Tete</div></div>
+      </div>
+    </div>
+
+    <!-- CTA após prova rápida -->
+    <div style="margin-top:20px">
+      <a href="https://pay.kambafy.com/checkout/9704499d-d02e-4406-a5d8-4fc80903ffac"
+         onclick="dispararCheckOut()"
+         class="btn-cta"
+         id="btn-prova">
+        Quero começar agora
+        <small>500 MT — acesso imediato</small>
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════
+       O QUE RECEBE
+  ═══════════════════════════ -->
+  <div class="secao">
+    <div class="secao-label">O teu acesso inclui</div>
+    <h2>Tudo o que precisas para começar hoje</h2>
+
+    <div class="o-que-recebe">
+      <ul class="recebe-lista">
+        <li>
+          <div class="recebe-icon">📋</div>
+          <div>
+            <strong>Guia digital completo</strong>
+            <span>Recebes o documento com a receita detalhada, os ingredientes exactos e as instruções de uso — tudo num formato simples, no teu telemóvel.</span>
+          </div>
+        </li>
+        <li>
+          <div class="recebe-icon">✅</div>
+          <div>
+            <strong>Dicas práticas de aplicação</strong>
+            <span>Orientações sobre como e quando aplicar o método para teres os melhores resultados — sem precisar de equipamento nem de sair de casa.</span>
+          </div>
+        </li>
+        <li>
+          <div class="recebe-icon">⚡</div>
+          <div>
+            <strong>Acesso imediato após pagamento</strong>
+            <span>O guia é enviado directamente para o teu WhatsApp ou Email assim que o Kambafy confirmar o pagamento.</span>
+          </div>
+        </li>
+      </ul>
+      <div style="margin-top:16px;padding:12px 14px;background:#fff8e1;border-radius:8px;border-left:3px solid #f59e0b;font-size:13px;color:#78350f;line-height:1.6">
+        <strong>Nota honesta:</strong> Este é um guia digital — não é uma app nem um curso em vídeo. É a receita e as instruções de como aplicá-la. Simples, directo e eficaz.
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════
+       DEPOIMENTOS FORTES
+  ═══════════════════════════ -->
+  <div class="secao" style="background:var(--creme)">
+    <div class="secao-label">Resultados reais</div>
+    <h2>Pessoas como tu já estão a sentir diferença</h2>
+
+    <!-- Vídeos depoimento (placeholders) -->
+    <div class="dep-video-grid">
+      <div class="dep-video-item">
+        <div class="dep-video-placeholder">
+          <div class="play-icon">▶</div>
+          <span>Vídeo de cliente — adicionar link</span>
         </div>
-    </div>
-
-    <div id="modal-privacidade" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-btn" onclick="fecharModal('modal-privacidade')">&times;</span>
-            <h2>Políticas de Privacidade</h2>
-            <p><strong>1. Dados:</strong> Usados estritamente para entrega e suporte ao cliente.</p>
-            <p><strong>2. Segurança:</strong> Gateway de pagamento encriptado.</p>
+        <div class="dep-video-caption">
+          <strong>Cliente — Maputo</strong>
+          "Em menos de uma semana já sentia diferença"
         </div>
+      </div>
+      <div class="dep-video-item">
+        <div class="dep-video-placeholder">
+          <div class="play-icon">▶</div>
+          <span>Vídeo de cliente — adicionar link</span>
+        </div>
+        <div class="dep-video-caption">
+          <strong>Cliente — Beira</strong>
+          "Voltei a fazer as coisas do dia a dia sem dor"
+        </div>
+      </div>
+      <div class="dep-video-item">
+        <div class="dep-video-placeholder">
+          <div class="play-icon">▶</div>
+          <span>Vídeo de cliente — adicionar link</span>
+        </div>
+        <div class="dep-video-caption">
+          <strong>Cliente — Nampula</strong>
+          "Já não preciso de pomadas todos os dias"
+        </div>
+      </div>
     </div>
 
-    <div class="toast-notificacao" id="toast">
-        <div class="toast-icon">✅</div>
-        <div class="toast-text"><strong id="toast-name">Cliente</strong>Pagou 500 MT há <span id="toast-time">2</span> min.</div>
+    <div class="divisor">Mais resultados</div>
+
+    <!-- Prints depoimentos completos -->
+    <div class="dep-prints-titulo">Prints reais do WhatsApp:</div>
+    <div class="scroll-hint">👈 Desliza para ver mais 👉</div>
+    <div class="prints-scroll">
+      <div class="print-item"><img src="depoimento1.jpeg" alt="Depoimento WhatsApp — alívio dores joelho"><div class="print-tag">Maputo — 5 dias de uso</div></div>
+      <div class="print-item"><img src="depoimento2.jpeg" alt="Resultado cliente — dores costas"><div class="print-tag">Beira — 7 dias de uso</div></div>
+      <div class="print-item"><img src="depoimento3.jpeg" alt="Feedback positivo método natural"><div class="print-tag">Nampula — 4 dias de uso</div></div>
+      <div class="print-item"><img src="depoimento4.jpeg" alt="Cliente satisfeito protocolo dores"><div class="print-tag">Matola — 6 dias de uso</div></div>
+      <div class="print-item"><img src="depoimento5.jpeg" alt="Melhoria dores articulares"><div class="print-tag">Tete — 5 dias de uso</div></div>
+      <div class="print-item"><img src="depoimento6.jpeg" alt="Resultado real após método"><div class="print-tag">Quelimane — 8 dias de uso</div></div>
+      <div class="print-item"><img src="depoimento7.jpeg" alt="Depoimento positivo dores joelho"><div class="print-tag">Pemba — 3 dias de uso</div></div>
+      <div class="print-item"><img src="depoimento8.jpeg" alt="Cliente sem dores após método"><div class="print-tag">Inhambane — 7 dias de uso</div></div>
+      <div class="print-item"><img src="depoimento9.jpeg" alt="Resultado comprovado método natural"><div class="print-tag">Chimoio — 5 dias de uso</div></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════
+       PREÇO + GARANTIA + PAGAMENTO
+  ═══════════════════════════ -->
+  <div class="secao">
+    <div class="secao-label">O teu investimento</div>
+    <h2>Acesso completo ao método</h2>
+
+    <div class="preco-box">
+      <div class="p-label">Acesso completo por apenas</div>
+      <div class="preco-valor"><span>MT </span>500</div>
+      <div class="preco-desc">Pagamento único · Sem mensalidades · Acesso imediato</div>
+
+      <a href="https://pay.kambafy.com/checkout/9704499d-d02e-4406-a5d8-4fc80903ffac"
+         onclick="dispararCheckOut()"
+         class="btn-cta"
+         style="background:#ffffff;color:var(--azul-escuro);box-shadow:0 6px 0 #0a1a2e,0 12px 24px rgba(0,0,0,0.2)">
+        🔒 Quero aliviar a minha dor agora
+        <small style="color:#64748b">Clica para aceder à página segura de pagamento</small>
+      </a>
     </div>
 
-    <script>
-        function abrirModal(id) { document.getElementById(id).style.display = 'flex'; }
-        function fecharModal(id) { document.getElementById(id).style.display = 'none'; }
+    <!-- Garantia -->
+    <div class="garantia" style="margin-top:20px">
+      <div class="garantia-icon">🛡️</div>
+      <div class="garantia-texto">
+        <h4>Garantia de 7 dias</h4>
+        <p>Tens 7 dias para testar o método. Se não gostares ou não sentires diferença, podes pedir o reembolso total — sem perguntas e sem complicação.</p>
+      </div>
+    </div>
 
-        const nomes = ["João B.", "Teresa M.", "Armando S.", "Helena C.", "Filomena N.", "Paulo Z.", "Carlos M."];
-        const cidades = ["Maputo", "Beira", "Nampula", "Pemba", "Tete"];
-        const toast = document.getElementById('toast');
+    <!-- Info pagamento -->
+    <div class="pagamento-info">
+      <div class="pag-titulo">Como funciona o pagamento:</div>
+      <ul class="pag-passos">
+        <li><div class="pag-num">1</div><span>Clicas no botão acima</span></li>
+        <li><div class="pag-num">2</div><span>Entras numa página segura do Kambafy</span></li>
+        <li><div class="pag-num">3</div><span>Pagas com M-PESA ou e-MOLA</span></li>
+        <li><div class="pag-num">4</div><span>Recebes o acesso imediatamente no WhatsApp ou Email</span></li>
+      </ul>
+      <div class="metodos">
+        <div class="metodo-badge mpesa-badge">M-PESA</div>
+        <div class="metodo-badge emola-badge">e-MOLA</div>
+      </div>
+    </div>
 
-        function mostrarNotificacao() {
-            document.getElementById('toast-name').innerText = `${nomes[Math.floor(Math.random() * nomes.length)]} (${cidades[Math.floor(Math.random() * cidades.length)]})`;
-            document.getElementById('toast-time').innerText = Math.floor(Math.random() * 12) + 1;
-            toast.classList.add('show');
-            setTimeout(() => { toast.classList.remove('show'); }, 4500);
-        }
-        setTimeout(() => { mostrarNotificacao(); setInterval(mostrarNotificacao, 20000); }, 6000);
-    </script>
+    <div class="aviso-med">
+      ⚕️ <strong>Aviso importante:</strong> Este é um produto educativo digital. Não substitui consulta médica especializada. Recomendamos consultar um profissional de saúde em caso de dúvida sobre a sua situação específica.
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════
+       FAQ
+  ═══════════════════════════ -->
+  <div class="secao">
+    <div class="secao-label">Dúvidas</div>
+    <h2>Perguntas frequentes</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Vou receber um produto físico?</div>
+      <div class="faq-a">Não. Recebes um guia digital enviado imediatamente após o pagamento via WhatsApp ou Email. Podes aceder no telemóvel ou computador.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Quanto tempo até sentir resultados?</div>
+      <div class="faq-a">A maioria dos nossos clientes começa a sentir diferença entre o 3º e o 7º dia de uso consistente do método.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Funciona para pessoas acima dos 60 anos?</div>
+      <div class="faq-a">Sim. O método foi desenvolvido especialmente para pessoas entre os 45 e os 75 anos. Os melhores resultados têm vindo exactamente desta faixa etária.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">O pagamento é seguro?</div>
+      <div class="faq-a">Sim. O pagamento é processado pelo Kambafy Moz — plataforma segura com encriptação total. Podes pagar via M-PESA ou e-MOLA com toda a tranquilidade.</div>
+    </div>
+  </div>
+
+  <!-- CTA FINAL -->
+  <div class="secao" style="border-bottom:none;text-align:center">
+    <p style="font-size:15px;color:var(--texto-suave);margin-bottom:20px">Não deixes a dor controlar a tua vida mais um dia.</p>
+    <a href="https://pay.kambafy.com/checkout/9704499d-d02e-4406-a5d8-4fc80903ffac"
+       onclick="dispararCheckOut()"
+       class="btn-cta">
+      🔒 Quero aliviar a minha dor agora
+      <small>500 MT · Acesso imediato · Garantia de 7 dias</small>
+    </a>
+  </div>
+
+</div><!-- /page -->
+
+<div class="footer">
+  <button onclick="abrirModal('modal-termos')">Termos de Uso</button> |
+  <button onclick="abrirModal('modal-privacidade')">Política de Privacidade</button>
+  <p>&copy; 2026 Vida Sem Dor MZ. Todos os direitos reservados.</p>
+</div>
+
+<!-- MODAIS -->
+<div id="modal-termos" class="modal-overlay">
+  <div class="modal-content">
+    <button class="close-btn" onclick="fecharModal('modal-termos')">&times;</button>
+    <h2>Termos de Uso</h2>
+    <p><strong>1. Natureza:</strong> Produto de informação digital com fins educativos. Não substitui aconselhamento médico profissional.</p>
+    <p><strong>2. Entrega:</strong> Acesso enviado imediatamente após confirmação do pagamento via WhatsApp ou Email.</p>
+    <p><strong>3. Garantia:</strong> 7 dias para solicitar reembolso total, sem perguntas.</p>
+  </div>
+</div>
+<div id="modal-privacidade" class="modal-overlay">
+  <div class="modal-content">
+    <button class="close-btn" onclick="fecharModal('modal-privacidade')">&times;</button>
+    <h2>Política de Privacidade</h2>
+    <p><strong>1. Dados recolhidos:</strong> Usados exclusivamente para entrega do produto e suporte ao cliente.</p>
+    <p><strong>2. Segurança:</strong> Pagamento processado com encriptação total pelo Kambafy. Não partilhamos dados com terceiros.</p>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <div class="toast-dot"></div>
+  <div class="toast-corpo">
+    <div class="toast-nome" id="toast-nome">João B. (Maputo)</div>
+    <div class="toast-msg">adquiriu o método há <span id="toast-tempo">3</span> minutos</div>
+  </div>
+</div>
+
+<script>
+// ── Pixel Facebook ──
+!function(f,b,e,v,n,t,s){
+  if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2076847739552009');
+fbq('track','PageView');
+fbq('track','ViewContent');
+function dispararCheckOut(){fbq('track','InitiateCheckout')}
+
+// ── Modais ──
+function abrirModal(id){document.getElementById(id).style.display='flex'}
+function fecharModal(id){document.getElementById(id).style.display='none'}
+document.querySelectorAll('.modal-overlay').forEach(function(m){
+  m.addEventListener('click',function(e){if(e.target===m)m.style.display='none'})
+})
+
+// ── Gate suave de 60 segundos ──
+(function(){
+  var GATE = 60;
+  var restam = GATE;
+  var btn = document.getElementById('btn-principal');
+  var aviso = document.getElementById('gate-aviso');
+  var timerEl = document.getElementById('gate-timer');
+
+  function actualizar(){
+    var m = Math.floor(restam/60);
+    var s = restam % 60;
+    timerEl.textContent = m+':'+String(s).padStart(2,'0');
+  }
+  actualizar();
+
+  var iv = setInterval(function(){
+    restam--;
+    if(restam <= 0){
+      clearInterval(iv);
+      // Desbloquear botão
+      btn.classList.remove('oculto');
+      aviso.classList.add('oculto');
+      // Scroll suave até ao botão
+      setTimeout(function(){
+        btn.scrollIntoView({behavior:'smooth',block:'center'});
+      }, 300);
+      return;
+    }
+    actualizar();
+  }, 1000);
+})();
+
+// ── Toast ──
+var nomes = ['João B.','Teresa M.','Armando S.','Helena C.','Filomena N.','Paulo Z.','Carlos M.','Rosa A.','Manuel J.','Conceição T.'];
+var cidades = ['Maputo','Beira','Nampula','Pemba','Tete','Matola','Chimoio','Quelimane'];
+var toast = document.getElementById('toast');
+
+function mostrarToast(){
+  var nome = nomes[Math.floor(Math.random()*nomes.length)];
+  var cidade = cidades[Math.floor(Math.random()*cidades.length)];
+  var min = Math.floor(Math.random()*15)+1;
+  document.getElementById('toast-nome').textContent = nome+' ('+cidade+')';
+  document.getElementById('toast-tempo').textContent = min;
+  toast.classList.add('show');
+  setTimeout(function(){toast.classList.remove('show')},4500);
+}
+setTimeout(function(){
+  mostrarToast();
+  setInterval(mostrarToast, 22000);
+}, 7000);
+</script>
+
+<noscript>
+  <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2076847739552009&ev=PageView&noscript=1"/>
+</noscript>
+
 </body>
 </html>
